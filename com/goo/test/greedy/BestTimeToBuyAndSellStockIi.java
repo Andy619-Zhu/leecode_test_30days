@@ -12,7 +12,7 @@ public class BestTimeToBuyAndSellStockIi {
     @Test
     public void test() {
 
-//        int[] prices = {7, 1, 5, 3, 6, 4}; //7
+//        int[] prices = {2,3,1,1,4}; //7
 //        int[] prices = {1,2,3,4,5}; //4
 //        int[] prices = {7,6,4,3,1};
         int[] prices = {2, 1, 2, 0, 1};
