@@ -1,6 +1,7 @@
 package com.goo.test.HashTable;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**  18
  * @author Lenovo
@@ -46,6 +47,6 @@ public class FourSum {
                 }
             }
         }
-        return res.stream().toList();
+        return new ArrayList<>(res);
     }
 }

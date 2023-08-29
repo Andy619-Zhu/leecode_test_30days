@@ -3,6 +3,7 @@ package com.goo.test.rollBackAlgo;
 import org.junit.Test;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**39题
  * @author Lenovo
@@ -35,7 +36,7 @@ public class CombinationSum {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         trackBack(candidates, target, 0);
         for (List<Integer> re : result) {
-            List<Integer> REE = re.stream().sorted(Comparator.comparing(Integer::byteValue)).toList();
+            List<Integer> REE = re.stream().sorted(Comparator.comparing(Integer::byteValue)).collect(Collectors.toList());
             set.add(REE);
         }
         return new ArrayList<>(set);

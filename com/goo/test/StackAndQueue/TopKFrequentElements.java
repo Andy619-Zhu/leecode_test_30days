@@ -3,6 +3,7 @@ package com.goo.test.StackAndQueue;
 import org.junit.Test;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class TopKFrequentElements {
 
@@ -31,7 +32,7 @@ public class TopKFrequentElements {
         }
         int[] res = new int[k];
         Map<Integer, Integer> collect = sortMap(map);
-        List<Integer> integers = collect.keySet().stream().toList();
+        List<Integer> integers = collect.keySet().stream().collect(Collectors.toList());
         for (int i = 0; i < k; i++) {
             res[i] = integers.get(i);
         }

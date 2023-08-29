@@ -33,14 +33,14 @@ public class EvaluateReversePolishNotation {
     }
 
     public int calThreeElement(String s1, String s2, String s3) {
-
-        return switch (s3) {
-            case "+" -> Integer.parseInt(s1) + Integer.parseInt(s2);
-            case "-" -> Integer.parseInt(s1) - Integer.parseInt(s2);
-            case "*" -> Integer.parseInt(s1) * Integer.parseInt(s2);
-            case "/" -> Integer.parseInt(s1) / Integer.parseInt(s2);
-            default -> 0;
-        };
+        return 0;
+//        return switch (s3) {
+//            case "+" -> Integer.parseInt(s1) + Integer.parseInt(s2);
+//            case "-" -> Integer.parseInt(s1) - Integer.parseInt(s2);
+//            case "*" -> Integer.parseInt(s1) * Integer.parseInt(s2);
+//            case "/" -> Integer.parseInt(s1) / Integer.parseInt(s2);
+//            default -> 0;
+//        };
 
     }
 }

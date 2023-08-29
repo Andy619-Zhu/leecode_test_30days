@@ -17,7 +17,6 @@ public class ReverseWordsInAString {
     public String reverseWords(String s) {
         StringBuilder sb = new StringBuilder();
         StringBuilder temp = new StringBuilder();
-
         int right = s.length() - 1;
         while (right >= 0) {
             while (right >= 0 && s.charAt(right) != ' ') {
@@ -25,7 +24,8 @@ public class ReverseWordsInAString {
                 right--;
             }
             temp.reverse();
-            if (!temp.isEmpty()) {
+
+            if (temp.length()!=0) {
                 sb.append(temp + " ");
                 temp.delete(0, temp.length());
             }

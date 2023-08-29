@@ -22,12 +22,13 @@ public class BinaryTreePreorderTraversal {
         TreeNode H = new TreeNode(8);
         A.left = B;
         A.right = C;
-//        B.left = D;
-//        B.right = E;
-//        E.right = H;
-//        C.left = F;
-//        C.right = G;
+        B.left = D;
+        B.right = E;
+        E.right = H;
+        C.left = F;
+        C.right = G;
         List<Integer> res = preorderTraversal(A);
+        preOrder(A,new ArrayList<>());
         for (Integer re : res) {
             System.out.println(re);
         }

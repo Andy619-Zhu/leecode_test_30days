@@ -63,7 +63,7 @@ public class reverse_vowels_of_string {
         int j = s.length() - 1;
         char[] chars = s.toCharArray();
         char tempi, tempj;
-        Set<Character> set = new HashSet<>() {{
+        Set<Character> set = new HashSet<Character>() {{
             add('a');
             add('e');
             add('i');

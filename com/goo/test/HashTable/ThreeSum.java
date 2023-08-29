@@ -3,6 +3,7 @@ package com.goo.test.HashTable;
 import org.junit.Test;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 
 /**
@@ -54,6 +55,6 @@ public class ThreeSum {
             left = i + 2;
             right = numSort.length - 1;
         }
-        return res.stream().toList();
+        return res.stream().collect(Collectors.toList());
     }
 }
